@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Zumbizera game.">
+  <title>Privacy Policy for Zumbizera</title>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f6f8;
+      --surface: #ffffff;
+      --text: #20242b;
+      --muted: #626b78;
+      --border: #e3e6eb;
+      --accent: #a52b2b;
+      --max: 820px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 18px;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.7 system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 42px clamp(22px, 5vw, 54px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(20, 25, 35, .05);
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      color: var(--accent);
+      font-size: clamp(1.8rem, 4vw, 2.35rem);
+      line-height: 1.2;
+    }
+
+    .updated {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    h2 {
+      margin: 30px 0 8px;
+      font-size: 1.18rem;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 8px 0 12px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 8px 0 14px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    a {
+      color: #8c2525;
+      overflow-wrap: anywhere;
+    }
+
+    .contact {
+      padding: 16px 18px;
+      background: #faf5f5;
+      border-left: 3px solid var(--accent);
+      border-radius: 5px;
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 0;
+        background: var(--surface);
+      }
+
+      main {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 30px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">
+    Zumbizera · Last updated: November 3, 2026
+  </p>
+
+  <p>
+    This Privacy Policy explains how the
+    <strong>Zumbizera</strong> game handles information
+    when you use it. The game is designed for multiplayer
+    entertainment and uses Google Firebase services
+    to support gameplay.
+  </p>
+
+  <h2>1. Registration and Personal Information</h2>
+
+  <p>
+    Zumbizera does not require conventional registration
+    and does not ask players to provide their full name,
+    email address, phone number, home address, personal
+    identification documents, or payment information
+    to use the game.
+  </p>
+
+  <p>
+    The app does not request access to your location,
+    contacts, photos, or address book.
+  </p>
+
+  <h2>2. Anonymous Authentication</h2>
+
+  <p>
+    The game uses <strong>Firebase Authentication</strong>,
+    provided by Google, through its anonymous authentication
+    feature. This service creates an anonymous account
+    and a unique technical identifier (UID) to authenticate
+    the player and support multiplayer rooms.
+  </p>
+
+  <p>
+    This identifier does not, by itself, represent the
+    player's name, email address, or phone number.
+    The UID is used for game operations and may be stored
+    in multiplayer room records in Cloud Firestore.
+  </p>
+
+  <h2>3. Username</h2>
+
+  <p>
+    Players may choose a username (nickname) to use in
+    the game. The nickname is checked by an automatic
+    filter for prohibited words and is stored only on
+    the player's device using the app's local storage
+    (LocalStorage).
+  </p>
+
+  <p>
+    The nickname is not sent to Cloud Firestore and is
+    not used to create an account containing the player's
+    real-world identity. We recommend that players do
+    not use personal information as their nickname.
+  </p>
+
+  <h2>4. Multiplayer Room Data</h2>
+
+  <p>
+    Zumbizera uses <strong>Google Cloud Firestore</strong>
+    to create and manage public and private multiplayer
+    rooms. For this purpose, technical information related
+    to rooms may be processed and stored, including:
+  </p>
+
+  <ul>
+    <li>Room code or identifier;</li>
+    <li>Host technical identifier (hostPeerId);</li>
+    <li>Host's anonymous Firebase UID (hostUid);</li>
+    <li>Host activity information (hostHeartbeat);</li>
+    <li>Number of players (playerCount);</li>
+    <li>Room status (status);</li>
+    <li>Room creation date and time (createdAt);</li>
+    <li>Whether the room is public or private (isPublic).</li>
+  </ul>
+
+  <p>
+    This information is used to create, find, authenticate
+    access to, and operate multiplayer rooms. The room
+    data stored in Firestore does not include the
+    player's nickname.
+  </p>
+
+  <h2>5. Communication Between Players</h2>
+
+  <p>
+    Zumbizera does not provide text chat, voice chat,
+    messaging, emoji sending, or other content-sharing
+    features between players through these means.
+  </p>
+
+  <h2>6. Third-Party Services</h2>
+
+  <p>
+    The game uses services provided by Google Firebase,
+    including Firebase Authentication and Cloud Firestore.
+    When these services are used, technical information
+    necessary for authentication, security, and
+    infrastructure operation may be processed by Google,
+    subject to Google's own terms and privacy policies.
+  </p>
+
+  <p>For more information, please see:</p>
+
+  <ul>
+    <li>
+      <a href="https://firebase.google.com/support/privacy"
+         target="_blank"
+         rel="noopener noreferrer">
+        Firebase Privacy and Security
+      </a>
+    </li>
+
+    <li>
+      <a href="https://policies.google.com/privacy"
+         target="_blank"
+         rel="noopener noreferrer">
+        Google Privacy Policy
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    The developer does not sell players' data or share
+    it with third parties for targeted advertising.
+  </p>
+
+  <h2>7. Data Storage and Security</h2>
+
+  <p>
+    The nickname is stored locally on the player's device.
+    Technical identifiers and data required for multiplayer
+    rooms are processed through Firebase services.
+  </p>
+
+  <p>
+    Cloud Firestore security rules are used to control
+    access to room information. However, no storage or
+    transmission system can be guaranteed to be
+    completely secure.
+  </p>
+
+  <h2>8. Advertising and Tracking</h2>
+
+  <p>
+    Zumbizera does not use the information described in
+    this policy to build advertising profiles or track
+    player behavior for targeted advertising.
+  </p>
+
+  <h2>9. Children's Privacy</h2>
+
+  <p>
+    Zumbizera does not ask players to provide personal
+    information to create an account or play the game.
+    Children's use of the game should comply with the
+    app store's age rating and applicable guidance from
+    parents or legal guardians.
+  </p>
+
+  <h2>10. Changes to This Privacy Policy</h2>
+
+  <p>
+    This Privacy Policy may be updated to reflect changes
+    to the game, the services it uses, or applicable legal
+    requirements. The current version will be available
+    on this page, together with its latest update date.
+  </p>
+
+  <h2>11. Contact</h2>
+
+  <div class="contact">
+    <p>
+      For questions or requests related to this Privacy
+      Policy, please contact:
+    </p>
+
+    <p>
+      <strong>Developer:</strong>
+      Francieli Prado
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      landowskiapps@gmail.com
+    </p>
+  </div>
+
+  <footer>
+    This Privacy Policy applies to the Zumbizera app
+    and the related services described in this document.
+  </footer>
+
+</main>
+</body>
+</html>
